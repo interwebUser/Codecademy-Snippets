@@ -1,3 +1,8 @@
+# This program creates a hash map with the ability to write and read key:value pairs
+# to an array of size specified by the user. It also uses an Open Addressing technique
+# for handling collisions. This program was written by Khalil Najjar as part of the
+# Codecademy "Career Path: Computer Science" Course, Section 8, Complex Data Structures 
+
 class HashMap:
   def __init__(self, array_size):
     self.array_size = array_size
