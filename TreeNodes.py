@@ -14,6 +14,8 @@ class TreeNode:
     
   def remove_child(self, child_node):
     print("Removing " + child_node.value + " from " + self.value)
+    # list comprehension to create a new list with any nodes matching 
+    # the node given as an argument filtered out.
     self.children = [child for child in self.children 
                      if child is not child_node]
 
