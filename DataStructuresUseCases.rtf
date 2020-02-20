@@ -1,0 +1,106 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;\f2\fswiss\fcharset0 Helvetica-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red14\green17\blue35;\red69\green220\blue160;
+\red16\green22\blue45;\red56\green56\blue56;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c6275\c8627\c18431;\cssrgb\c30980\c87843\c69020;
+\cssrgb\c7843\c11765\c23137;\cssrgb\c28235\c28235\c28235;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww37900\viewh21760\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs40 \cf2 \cb3 \expnd0\expndtw0\kerning0
+1. You are building an application that needs to keep track of each user\'92s permissions. Which data structure lends itself best to allowing you to add and retrieve user permissions by 
+\f1\fs32 \cf4 user_id
+\f0\fs40 \cf2 ?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs35\fsmilli17600 \cf2 \cb5 \
+-
+\f2\b Hash tables
+\f0\b0  are ideal for assigning and retrieving data in the fastest way possible, making them ideally suited for this scenario. In this situation, you can map each 
+\f1\fs32 \cf4 user_id
+\f0\fs35\fsmilli17600 \cf2  to either 
+\f1\fs32 \cf4 True
+\f0\fs35\fsmilli17600 \cf2  or 
+\f1\fs32 \cf4 False
+\f0\fs35\fsmilli17600 \cf2  in the Hash table for each given permission.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs40 \cf2 \cb3 2. You\'92re helping an airline keep track of its various flight paths, as well as connecting flights available. You want to model this using a data structure that will allow you to introduce additional airports as the airline gets set up in new cities. Which data structure would probably come in handy?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs35\fsmilli17600 \cf2 \cb5 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb5 -
+\f2\b Graphs
+\f0\b0  are ideal for keeping track of various pathways between nodes. In this situation, the airline\'92s flight paths can be modeled by a graph with the airports as vertices and the flights as edges.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs40 \cf2 \cb3 3. You are building a tic-tac-toe game so that a player can play against the computer. In order to do this, you need the game to keep track of possible moves given different player choices.\cb1 \
+\cb3 Which of these data structures could help you out?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs35\fsmilli17600 \cf2 \cb5 \
+-
+\f2\b \cb5 Trees
+\f0\b0  are ideal for modeling hierarchical relationships, making them ideally suited for modeling the control flow of possible moves given a limited number of choices. In this situation, the computer can use a tree to branch to its next move, depending on the player\'92s move.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs40 \cf2 \cb3 4. You are helping a customer service desk build some software that allows representatives to reply to tickets in the order they are received. Which data structure could be useful here?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs35\fsmilli17600 \cf2 \cb5 \
+-
+\f2\b \cb5 Queues
+\f0\b0  follow a FIFO (first in, first out) protocol, making them ideally suited to this task. In this situation, the first customer ticket added will be the first one addressed.
+\fs32 \cf6 \cb1 \
+
+\fs35\fsmilli17600 \cf2 \cb5 \
+\pard\pardeftab720\partightenfactor0
+
+\fs40 \cf2 \cb3 5. A marketing agency wants to prioritize projects that come up for higher-paying clients. Which data structure would lend itself to helping the agency achieve this?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs35\fsmilli17600 \cf2 \cb5 \
+-
+\f2\b \cb5 Heaps
+\f0\b0  are ideally suited for maintaining a list of items in order of priority. In this situation, we could use a max-heap (opposite of min-heap) to constantly re-adjust our heap such that the highest paying client is the root of the heap.\
+\cb5 \
+\pard\pardeftab720\partightenfactor0
+
+\fs40 \cf2 \cb3 6. You\'92ve been asked to add \'93undo\'94 functionality to a custom text editor. Which data structure would be ideally suited to implement this feature?
+\fs35\fsmilli17600 \cb5 \
+\
+-
+\f2\b \cb5 Stacks
+\f0\b0  follow a LIFO (last in, first out) protocol, making them ideally suited to this task. In this situation, the last change added should be the first change removed for an undo functionality.\
+\
+
+\fs40 \cb3 7. You\'92ve decided to build your own music playlist command line program. You want to be able to:\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 	-\expnd0\expndtw0\kerning0
+select songs, starting with the first\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 	-\expnd0\expndtw0\kerning0
+add a new song to the end of the playlist\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 	-\expnd0\expndtw0\kerning0
+skip to the next song\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Which data structure might be helpful for you?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs35\fsmilli17600 \cf2 \cb5 \
+-
+\f2\b \cb5 Linked lists
+\f0\b0  are helpful in situations where you need to traverse a list or add to the end. In this situation, we model our playlist with a linked list and traverse the nodes to move to the next song. We can also 
+\f1\fs32 \cf4 enqueue()
+\f0\fs35\fsmilli17600 \cf2  a song to the end of the playlist.\cb5 \
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+}
