@@ -1,7 +1,7 @@
 # This program creates a Stack data structure which transacts items (nodes) in a 
 # FIFO format given the stack size limit. Note that the node is imported from another file
 # to save real estate in this file. This program was written by Khalil Najjar as part
-# of the Codecademy "Career Path: Computer Science" Course, Section 8, Complex Data Structures 
+# of the Codecademy "Career Path: Computer Science" Course, Section 7, Linear Data Structures  
 
 from NodesAndLinkedLists import Node
 

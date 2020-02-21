@@ -1,7 +1,7 @@
 # This program creates a Queue data structure which transacts items (nodes) in a 
 # LIFO format given the maximum size set. Note that the node is imported from another file
 # to save real estate in this file. This program was written by Khalil Najjar as part
-# of the Codecademy "Career Path: Computer Science" Course, Section 8, Complex Data Structures 
+# of the Codecademy "Career Path: Computer Science" Course, Section 7, Linear Data Structures  
 
 
 from NodesAndLinkedLists import Node
