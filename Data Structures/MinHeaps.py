@@ -84,4 +84,3 @@ class MinHeap:
       print("Heap of {0} elements restored with {1} swaps"
             .format(element_count, swap_count))
       print("")  
-

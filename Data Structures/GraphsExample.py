@@ -14,6 +14,7 @@
 
 from GraphsGraph import Graph
 from GraphsVertex import Vertex
+from random import randrange
 
 def print_graph(graph):
   for vertex in graph.graph_dict:
